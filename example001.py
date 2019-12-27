@@ -15,3 +15,8 @@ print(I2(2))
 print(I2(3))
 
 print("Hello World")
+
+def f(x,y):
+    return x + y
+
+z = f(1)
