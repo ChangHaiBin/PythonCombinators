@@ -50,7 +50,7 @@ class Interpolate:
 p1 = (1.0, 7.0)
 p2 = (5.0, 3.0)
 
-dataset = [(-3,100),(-1,4),(1,7),(5,3),(100,300)]
+dataset = [(-4,4),(-2,0),(-1,6),(1,7),(5,3)]
 
 inter_obj = Interpolate(dataset)
 
