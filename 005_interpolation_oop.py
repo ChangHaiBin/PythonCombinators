@@ -52,6 +52,11 @@ p2 = (5.0, 3.0)
 
 dataset = [(-4,4),(-2,0),(-1,6),(1,7),(5,3)]
 
+dataset = [
+    (float(x), float(y))
+    for (x,y) in dataset
+]
+
 inter_obj = Interpolate(dataset)
 
 print(inter_obj.get_value(1))

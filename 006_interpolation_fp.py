@@ -50,6 +50,11 @@ p2 = (5.0, 3.0)
 
 dataset = [(-4,4),(-2,0),(-1,6),(1,7),(5,3)]
 
+dataset = [
+    (float(x), float(y))
+    for (x,y) in dataset
+]
+
 f = Interpolate(dataset)
 
 print(f(1))
@@ -58,7 +63,8 @@ print(f(3))
 print(f(4))
 print(f(5))
 
-temp = -4
-while temp < 5:
-    print(round(temp,5), ",",  round(f(temp),5))
-    temp = temp + 0.2
+#
+# temp = -4
+# while temp < 5:
+#     print(round(temp,5), ",",  round(f(temp),5))
+#     temp = temp + 0.2
